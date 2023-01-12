@@ -47,9 +47,9 @@ namespace UI
             _timerText.text = text;
         }
         
-        private void SetLaserText(string text)
+        public void SetLaserText(int amount)
         {
-            _laserText.text = text;
+            _laserText.text = "Laser shots: " + amount;
         }
     }
 }

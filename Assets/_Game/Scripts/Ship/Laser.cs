@@ -9,11 +9,15 @@ namespace Ship
     [RequireComponent(typeof(Rigidbody2D))]
     public class Laser : MonoBehaviour
     {
+        [SerializeField] private UI.UI _ui;
+        
         [Header("Project References:")] [SerializeField]
         private LaserRuntimeSet _lasers;
 
         [Header("Values:")]
         [SerializeField] private float _speed = 0.2f;
+
+        private int _laserAmount;
 
         private Rigidbody2D _rigidbody;
 
@@ -26,6 +30,8 @@ namespace Ship
 
         private void OnDestroy()
         {
+            _laserAmount++;
+            _ui.SetLaserText(_laserAmount);
             _lasers.Remove(gameObject);
         }
 

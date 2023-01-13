@@ -44,9 +44,9 @@ namespace UI
             _healthText.text = text;
         }
         
-        public void SetScoreText(string text)
+        public void SetScoreText(int amount)
         {
-            _scoreText.text = text;
+                _scoreText.text = "Score: " + amount;
         }
         
         private void SetTimerText()

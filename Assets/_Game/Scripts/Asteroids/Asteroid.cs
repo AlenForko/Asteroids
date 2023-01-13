@@ -24,6 +24,7 @@ namespace Asteroids
         private Rigidbody2D _rigidbody;
         private Vector3 _direction;
         private int _instanceId;
+        private int _score;
 
         private void Start()
         {
@@ -48,6 +49,8 @@ namespace Asteroids
         {
             _onAsteroidDestroyed.Raise(_instanceId);
             Destroy(gameObject);
+            _score++;
+            GameObject.Find("UI").GetComponent<UI.UI>().SetScoreText(_score);
         }
 
         // TODO Can we move this to a single listener, something like an AsteroidDestroyer?

@@ -407,6 +407,14 @@ PrefabInstance:
       propertyPath: m_text
       value: 'Time: 0'
       objectReference: {fileID: 0}
+    - target: {fileID: 7101966235281579915, guid: c71243f12cdfc2a4282f1805a6098327, type: 3}
+      propertyPath: m_text
+      value: 'Score: 0'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7101966235362614044, guid: c71243f12cdfc2a4282f1805a6098327, type: 3}
+      propertyPath: m_text
+      value: 'Laser Shot: 0'
+      objectReference: {fileID: 0}
     - target: {fileID: 7101966235372498888, guid: c71243f12cdfc2a4282f1805a6098327, type: 3}
       propertyPath: m_Name
       value: UI
@@ -494,6 +502,10 @@ PrefabInstance:
     - target: {fileID: 7101966235372498892, guid: c71243f12cdfc2a4282f1805a6098327, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7101966235834179332, guid: c71243f12cdfc2a4282f1805a6098327, type: 3}
+      propertyPath: m_text
+      value: 'Health: 10'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+        <ui:Label tabindex="-1" text="Ship Editor" display-tooltip-when-elided="true" style="font-size: 45px; -unity-font-style: bold; -unity-text-align: middle-center;" />
+        <ui:Slider picking-mode="Ignore" label="Throttle Speed" value="42" high-value="10" name="ThrottleSlider" show-input-field="true" low-value="2" binding-path="throttleSpeed" style="-unity-font-style: bold; -unity-text-align: middle-center; font-size: 15px;" />
+        <ui:Slider picking-mode="Ignore" label="Rotation Speed" value="42" high-value="10" name="RotationSlider" low-value="2" show-input-field="true" binding-path="rotationSpeed" style="font-size: 15px; -unity-font-style: bold; -unity-text-align: middle-center;" />
+    </ui:VisualElement>
+</ui:UXML>

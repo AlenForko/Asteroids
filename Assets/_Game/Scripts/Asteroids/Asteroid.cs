@@ -42,6 +42,7 @@ namespace Asteroids
             if (string.Equals(other.tag, "Laser"))
             {
                HitByLaser();
+               Destroy(other.gameObject);
             }
         }
 

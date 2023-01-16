@@ -18,6 +18,8 @@ namespace UI
         
         [Header("Timer:")]
         [SerializeField] private TextMeshProUGUI _timerText;
+
+        private float time;
         
         [Header("Laser:")]
         [SerializeField] private TextMeshProUGUI _laserText;
@@ -25,6 +27,11 @@ namespace UI
         private void Start()
         {
             SetHealthText($"Health: {_healthVar.Value}");
+        }
+
+        private void Update()
+        {
+            SetTimerText();
         }
 
         public void OnHealthChanged(IntReference newValue)
@@ -37,14 +44,15 @@ namespace UI
             _healthText.text = text;
         }
         
-        private void SetScoreText(string text)
+        public void SetScoreText(int amount)
         {
-            _scoreText.text = text;
+                _scoreText.text = "Score: " + amount;
         }
         
-        private void SetTimerText(string text)
+        private void SetTimerText()
         {
-            _timerText.text = text;
+            time += Time.deltaTime;
+            _timerText.text = "Time: " + Mathf.RoundToInt(time);
         }
         
         public void SetLaserText(int amount)

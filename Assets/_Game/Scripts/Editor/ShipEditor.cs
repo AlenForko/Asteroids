@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
+using Codice.Client.BaseCommands.Import;
 using UnityEditor;
 using UnityEditor.UIElements;
 using UnityEngine;
@@ -31,6 +32,13 @@ public class ShipEditor : Editor
         rotationSlider.RegisterCallback<ChangeEvent<float>>(evt =>
         {
             rotationSlider.value = evt.newValue;
+        });
+        
+        //HealthSettings
+        var healthSlider = myInspector.Q<SliderInt>("HealthSlider");
+        healthSlider.RegisterCallback<ChangeEvent<int>>(evt =>
+        {
+            healthSlider.value = evt.newValue;
         });
 
         // Return the finished inspector UI

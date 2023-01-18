@@ -7,4 +7,6 @@ public class ShipInfo : ScriptableObject
 {
     public float throttleSpeed;
     public float rotationSpeed;
+
+    public int health;
 }

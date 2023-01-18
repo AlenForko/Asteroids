@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0ab7cac3fd94424da6ac5d0ab6d3e57, type: 3}
   m_Name: ShipInfo
   m_EditorClassIdentifier: 
-  throttleSpeed: 5.89
-  rotationSpeed: 6.19
+  throttleSpeed: 6.8
+  rotationSpeed: 5
+  health: 21

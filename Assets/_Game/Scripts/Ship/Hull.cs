@@ -7,7 +7,6 @@ namespace Ship
     public class Hull : MonoBehaviour
     {
         [SerializeField] private Health _health;
-        [SerializeField] private UI.UI _ui;
 
         private readonly int _damage = 1;
         
